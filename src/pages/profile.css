@@ -1,0 +1,56 @@
+
+.profile__data {
+    margin-top: 15px;
+  }
+  .profile__data .box {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.245);
+    gap: 10px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  
+    flex-direction: column;
+  }
+  .profile__data .profile__img {
+    border-radius: 5px;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+  }
+  .profile__img img {
+    background-color: var(--theme);
+    object-fit: contain;
+    object-position: center;
+    width: auto;
+    height: 250px;
+    border-radius: 5px;
+    border: 5px groove var(--theme);
+  }
+  .profile__details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    flex: 1;
+  }
+  .profile__details span {
+    padding: 5px;
+    background-color: var(--theme);
+    border-radius: 5px;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .profile__data h1 {
+    color: var(--theme);
+    text-shadow: 0 0 5px #fff;
+  }
+  

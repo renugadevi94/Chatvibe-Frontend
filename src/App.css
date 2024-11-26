@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  /* color mode*/
+  --theme: #4b0dba;
+  --secondary: #3b4286;
+  --green: #06aa44;
+  --gray: #80808059;
+  /* fonts */
+  --body-font: "Comfortaa", cursive;
+  /* --secont-font: "Comfortaa", cursive; */
+  --secont-font: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  /* scrollbar-gutter: stable; */
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--theme);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #2d2d2d;
+}
+body {
+  background-image: url("https://png.pngtree.com/background/20230525/original/pngtree-phone-with-apps-flowing-out-of-it-picture-image_2729904.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+}
+/* common css */
+section {
+  min-height: 100vh;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.errorMessage {
+  position: absolute;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #910303;
+}
+
+.button {
+  background-color: var(--theme);
+  padding: 5px 10px;
+  transition: 0.3s !important;
+  outline: none;
+  border: none;
+}
+.button:hover {
+  scale: 1.1;
+}
+input {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.noline {
+  text-decoration: none;
+}
+.app__logo {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  color: var(--theme);
+  position: relative;
+  transition: 0.3s;
+}
+.app__logo:hover {
+  text-shadow: 0 0 10px var(--theme);
+}

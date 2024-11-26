@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  .contact {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    z-index: 10;
+    transition: 0.3s;
+  }
+  .contact.active {
+    transform: translate(-250px);
+  }
+  .toggle {
+    display: grid;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 576px) {
+  .register__form {
+    max-width: 500px;
+    width: auto;
+    min-width: 360px;
+    padding: 30px 15px;
+  }
+  .login__btn {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,201 @@
+.chat {
+    height: 100vh;
+  }
+  .contact {
+    background-color: var(--theme);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .message__area {
+    background-color: #c7ecee;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    height: 100vh;
+  }
+  .messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    padding: 10px;
+    scrollbar-gutter: stable;
+  }
+  .online__user {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 26px;
+    box-shadow: 0 0 10px 0px rgba(145, 192, 255, 0.5),
+      inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6),
+      inset 0px 11px 20px 0px rgb(255, 255, 255);
+    color: #000;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .online__user:hover {
+    box-shadow: 0 0 10px #fff;
+  }
+  .app__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 24px;
+    transition: 0.3s;
+  }
+  .app__name:hover {
+    scale: 1.1;
+    text-shadow: 0 0 5px #000;
+    cursor: pointer;
+  }
+  .online__user__img {
+    background-color: white;
+    width: 35px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    height: 35px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    box-shadow: 0 0 2px #000;
+    position: relative;
+  }
+  .online__user__status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #4cd137;
+    box-shadow: 0 0 5px #000;
+    width: 10px;
+    height: 10px;
+  }
+  .offline {
+    background-color: red;
+  }
+  .online__user.active {
+    background-color: var(--green);
+    background-color: #badc58;
+  }
+  .no__contact {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    color: var(--theme);
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .receivedMsg,
+  .sendMsg {
+    padding: 5px;
+    background: rgba(179, 11, 11, 0.614);
+    box-shadow: 0 0 16px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: inline-block;
+  }
+  .sendMsg {
+    background-color: #95afc0;
+    text-align: left;
+  }
+  .receivedMsg {
+    background-color: #686de0;
+  }
+  .control .btn__control {
+    outline: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 0.1s;
+    display: grid;
+    color: #000;
+    place-content: center;
+  }
+  .control .btn__control:hover {
+    scale: 1.1;
+    background-color: white;
+    color: var(--theme);
+    box-shadow: 0 0 15px #fff;
+  }
+  .message__input:focus,
+  .message__input:hover {
+    box-shadow: 0 0 10px var(--theme) !important;
+  }
+  .message__img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+  }
+  .message__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .toggle {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--theme);
+    border-radius: 0 5px 5px 0;
+    opacity: 0;
+    display: grid;
+    place-content: center;
+    display: none;
+  }
+  .toggle span {
+    background-color: white;
+    display: block;
+    width: 25px;
+    height: 1px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .toggle span::after,
+  .toggle span::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    transition: 0.3s;
+  }
+  .toggle span::after {
+    top: 9px;
+  }
+  .toggle span::before {
+    top: -9px;
+  }
+  .toggle.active span {
+    background-color: transparent;
+  }
+  .toggle.active span::after {
+    top: 0;
+    rotate: 45deg;
+  }
+  .toggle.active span::before {
+    top: 0;
+    rotate: -45deg;
+  }

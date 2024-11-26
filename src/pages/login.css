@@ -1,0 +1,8 @@
+
+.login {
+    min-height: 100vh;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+  }
+  
